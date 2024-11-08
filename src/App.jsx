@@ -52,62 +52,19 @@ function App() {
             <div className="flex items-center gap-2 font-bold text-azul">
               <p className="text-sm">Tarefas criadas</p>
               <span className="px-2 py-1 rounded-2xl text-xs bg-cinza-400 text-cinza-200">
-                2
+                0
               </span>
             </div>
             <div className="flex items-center gap-2 font-bold text-roxo">
               <p className="text-sm">Concluídas</p>
               <span className="px-2 py-1 rounded-2xl text-xs bg-cinza-400 text-cinza-200">
-                1 de 2
+                0 de 0
               </span>
             </div>
           </header>
 
           <div className="flex flex-col gap-3">
-            {/* Item */}
-            <div className="flex flex-1 justify-between items-center gap-3 p-4 rounded-lg bg-cinza-500 border-[1px] border-cinza-400">
-              <div className="flex">
-                <label htmlFor="checkbox" className="flex items-center gap-3 p-1">
-                  <input type="checkbox" className="hidden"/>
-                  <span 
-                    className="
-                      rounded-full w-4 h-4 flex items-center justify-center 
-                      border-2 border-blue-500 hover:border-blue-300"
-                  >
-                    {/* Icone */}
-                  </span>
-                  <p>
-                    Tarefa 1
-                  </p>
-                </label>
-              </div>
-              <button>
-                <Trash className="text-cinza-300 hover:text-danger"/>
-              </button>
-            </div>
-
-            {/* Item */}
-            <div className="flex flex-1 justify-between items-center gap-3 p-4 rounded-lg bg-cinza-500 border-[1px] border-cinza-400">
-              <div className="flex">
-                <label htmlFor="checkbox" className="flex items-center gap-3 p-1">
-                  <input type="checkbox" className="hidden" checked="true"/>
-                  <span 
-                    className="
-                      rounded-full w-4 h-4 flex items-center justify-center 
-                      border-2 border-roxo-dark bg-roxo-dark"
-                  >
-                    <Check/>
-                  </span>
-                  <p className="text-cinza-300 line-through">
-                    Tarefa 1
-                  </p>
-                </label>
-              </div>
-              <button><Trash className="text-cinza-300 hover:text-danger"/></button>
-            </div>
-
-            
-
+            <img classname="" src="Clipboard.png" alt="" />
           </div>
 
         </div>
