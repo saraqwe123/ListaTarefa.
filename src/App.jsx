@@ -1,10 +1,31 @@
-import { Check, Trash } from "@phosphor-icons/react"
 
+import {createContext} from 'react'
 
+const todoContext = createContext()
+
+  export const TodoProvider = ({children}) => {
+    const [textos, setTextos] = useState([])
+
+    const addTexto = {texto, completado: false} //diz que o texto ainda está incompleto
+    setTexto([...texto, novoTexto]) //adc novoTexto no fim do array texto
+
+    const alterarTexto = (index) => {
+      const novoTexto = textos.map((texto, i) => {
+        if (i === index) {
+          return {
+            ...texto,
+            completado: !texto.completado,
+            completadoAt: !texto.completado ? new Date().toISOString() : null, 
+          };
+          return (
+            
+          )
+        }
+        })
+      }
+      }
 
 function App() {
-  
-
   return (
     <div 
       className="
@@ -19,7 +40,7 @@ function App() {
       <section className="w-full max-w-3xl m-auto ">
         
         <div className="flex justify-between items-center gap-2 -translate-y-2/4">
-          <input 
+          <input onChange={(e) => setTexto(e.target.value)}
             type="text"
             className="
             bg-cinza-500 text-cinza-100
@@ -64,7 +85,7 @@ function App() {
           </header>
 
           <div className="flex flex-col gap-3">
-            <img classname="" src="Clipboard.png" alt="" />
+            <img classname="" src="Empty.svg" alt="" />
           </div>
 
         </div>
